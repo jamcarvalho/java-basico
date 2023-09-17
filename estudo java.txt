@@ -1,0 +1,115 @@
+Features JAVA
+
+Pilares da OO
+
+-Classe e Objeto
+-Encapsulamento
+-Abstração
+-Herança
+-Polimorfismo
+
+Robusta
+
+- gerenciamento de memória forte
+- coleta automática de lixo
+- tratamento de exceções e mecanismos de verificação de tipo de comprometimento
+
+Segura
+
+- Consegue fazer pré-análise 
+
+Interpretada
+
+- Java usa compilador e interpretador. Os programas Java são compilados para gerar o bytecode e a
+  JVM interpreta o byte code
+  
+Multi-thread
+
+Thread é um subprocesso leve e independente de um programa em execução que compartilha recursos.
+Multi-thread é o nome dado ao processo de vários threads sendo executados simultaneamente.
+
+História
+
+-------------------------------
+JAVA Básico
+-------------------------------
+
+IDE
+
+- aceleração de escrita - auto-complete / intelliSense
+- formatação de palavras
+- análise de erros de sintaxe
+- compilação de programas
+- depuração
+
+Eclipse - mais utilizada em ambiente corporativo com interface bem interativa
+IntelliJ - oferece muitos recursos de inteligência para a agilidade do desenvolvimento com sugestões de ações assertivas
+VSCode - muito utilizada por DEVS que já atuam com NodeJS ou plataformas de front-end
+
+MAVEN - ferramenta de automação de compilação utilizada primariamente em projetos Java, mas hoje
+        também é utilizada para contrruir e gerenciar projetos escritos em C#, Ruby entre outros
+		
+
+Classe
+------
+a classe pode ser executável neste caso precisa do método main
+
+NomeArquivo.java - código fonte / nome de arquivos 
+					a classe deve ter o mesmo nome do arquivo
+					
+nome de variáveis - letra minúscula na primeira letra Camel Case - nomeVariavel
+
+nome de constantes sempre em letras maiúsculas
+
+	final BR = "Brasil"
+
+variaveis deve conter letra, underline ou $ e não podem comecar por algarismos
+
+Declarando variáveis
+--------------------
+
+variável tem que ser tipada -> 
+	int idade = 23;
+	double altura = 1.62;
+	Dog zequinha;
+
+Declarando métodos
+------------------
+
+TipoRetorno NomeObjetivoNoInfinitivo
+
+int somar (int num1, int num2)
+
+String formatarCEP (long cep)
+
+Java Beans
+----------
+
+uma variável deve ser clara, sem abreviações ou definição sem sentido
+uma variável é sempre no singular, exceto qdo se tratar de um array ou de uma coleção
+defina um idioma único para suas variáveis
+
+métodos deverão ser nomeados com verbos no infinitivo, através da mistura de letras minusculas e maiusculas
+
+somar()
+somarTributos()
+abrirConexao()
+concluirProcessamento()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
