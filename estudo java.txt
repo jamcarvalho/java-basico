@@ -50,8 +50,10 @@ MAVEN - ferramenta de automação de compilação utilizada primariamente em pro
         também é utilizada para contrruir e gerenciar projetos escritos em C#, Ruby entre outros
 		
 
+------------------
 Classe
-------
+------------------
+
 a classe pode ser executável neste caso precisa do método main
 
 NomeArquivo.java - código fonte / nome de arquivos 
@@ -65,14 +67,16 @@ nome de constantes sempre em letras maiúsculas
 
 variaveis deve conter letra, underline ou $ e não podem comecar por algarismos
 
+------------------
 Declarando variáveis
---------------------
+------------------
 
 variável tem que ser tipada -> 
 	int idade = 23;
 	double altura = 1.62;
 	Dog zequinha;
 
+------------------
 Declarando métodos
 ------------------
 
@@ -82,8 +86,9 @@ int somar (int num1, int num2)
 
 String formatarCEP (long cep)
 
+------------------
 Java Beans
-----------
+------------------
 
 uma variável deve ser clara, sem abreviações ou definição sem sentido
 uma variável é sempre no singular, exceto qdo se tratar de um array ou de uma coleção
@@ -96,16 +101,218 @@ somarTributos()
 abrirConexao()
 concluirProcessamento()
 
+------------------
+Tipos de Variáveis
+------------------
+
+tipos primitivos
+	int, byte, short, long, float, double, boolean e char - não são considerados objetos
+	armazenados na pilha de memória (memory stack)
+
+Inteiros
+
+byte  - 1 byte  - -128 a 127
+short - 2 bytes - -32768 a 32767
+int   - 4 bytes - 
+long  - 8 bytes - 
+
+Decimais
+
+float  - 4 bytes
+double - 8 bytes
+
+------------------
+Declaração de variaveis
+------------------
+
+tipo de dados / identificação / valor inicial
+
+int idade = 0;
+int anoFabricacao = 2021;
+flot pi = 3.14F;
+long token = 987654321987654L;
+double salario = 2000.50;
+double salarioMinimo = 650.00;
+
+JAVA é FORTEMENTE tipado
+
+------------------
+Variáveis e Constantes
+------------------
+
+Constantes são valores armazenados em memória que não podem ser modificados depois de declarados.
+Em Java esses valores são representados pela palavra reservada: final
+
+por convenção, constantes são escritas em letras maiúsculas
+
+final double VALOR_PI = 3.14;
+
+------------------
+Operadores
+------------------
+
+Atribuição --> =
+int idade = 30;
+Date dataNascimento = new Date();
+
+Operador aritmético --> + - * / % (módulo-resto) 
+
+operador de adição utilizado em variávieis do tipo texto, realizará a concatenação
+String nomeCompleto = "jorge " + "Carvalho"
+
+------------------
+Operadores unário
+------------------
+
+operador unário de valor positivo +
+operador unário de valor negativo -
+operador unário de incremento de valor ++
+operador unário de decremento de valor --
+operador unário lógico de negação !
+
+------------------
+Operador ternário
+------------------
+
+representado por ? :
+
+<expressão condicional> ? <condição verdadeira> : <condição falsa>
+
+int a = 6;
+int b = 5;
+String resultado = "";
+
+if (a==b)
+	resultado = "verdadeiro";
+else
+	resultado = "falso";
+	
+ou	
+	
+String resultado2 = a==b ? "verdadeiro" : "falso"; 	
+	
+------------------
+Operadores relacionais
+------------------	
+
+==
+!=
+>
+>=
+<
+<=
+
+qdo estiver comparando objetos é melhor usar o equals
+
+String texto1 = "jorge";
+String texto2 = "Carvalho";
+
+texto1.equals(texto2);
+	
+------------------
+Operadores lógicos
+------------------	
+
+E &&
+OU ||
+
+------------------
+Métodos
+------------------	
+
+uma classe é definida por atributos e métodos (funções ou sub-rotinas)
+
+Métodos devem ser nomeados por verbos no infinitivo (ação) usando padrão camelCase
+o método executa uma única ação
+
+Não existem métodos globais, eles sempre pertencem a uma classe
+
+Caso o método não retorne valor, ele será representado pela palavra-chave VOID
+
+Visibilidade do método: visível a toda a aplicação, somente ao pacote, atrvés de herança ou somente visível 
+						para a própria classe
+
+public/private double/void nomeMetodo() {lógica / return}
 
 
+------------------
+Escopo de Código
+------------------	
+
+Identificar a localização mais conveniente para a escrita de algoritmos necessário ao nosso programa
+
+Escopo de Classe
+Escopo de Métodos
+Escopo de Fluxo
+
+Escopo pode ser entendido como o ambinete onde uma variável pode ser acessada. 
+O escopo de variáveis vai de acordo com o bloco onde ela foi declarada
+
+------------------
+Palavras Reservadas
+------------------
+
+java contém 52 palavras reservadas
+
+todas as palavras rservadas são classificadas em grupos e escritas em letras minúsculas, 
+sendo identificadas por cor especial na maioria dos IDES
+
+controle de pacotes
+-------------------
+import / package
+
+Modificadores de acesso
+-----------------------
+public / private / protected
+
+Tipos primitivos
+---------------
+boolean / byte / char / double / float / int / long / short / void
+
+Modificadores de classes, variáveis ou métodos
+----------------------------------------------
+abstract / class / extends / final / implements / interface / native / new / static / strictfp / synchronized / transient / volatile / 
+
+Controle de fluxo dentro de um bloco de código
+----------------------------------------------
+break / case / continue
 
 
+------------------
+Java Doc
+------------------
+// comentário de uma única linha
+/* comentário de várias linhas */
+/** as duas estrelinhas é para identificar comentário a nível de documentação */
+
+linha de comando:
+
+javadoc -encoding UTF-8 -docencoding ISO-8859-1 -d ../docs src/*.java
+
+------------------
+Controle de fluxo
+------------------
+
+3 tipos de fluxos: 
+
+condicional
+-----------
+	if-else / switch-case
+
+excepcional
+-----------
+	for / while / do-while
+
+repetição
+---------
+	try-catch-finally / throw
 
 
+-------------------
+Laços de Repetição
+-------------------
 
-
-
-
+For / While / Do While
 
 
 
